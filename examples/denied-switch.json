@@ -1,0 +1,45 @@
+{
+  "protocol_version": "0.1",
+  "record_id": "switch-denied-002",
+  "switchboard_id": "switchboard-demo-01",
+  "subject_agent": "agent-audit-01",
+  "status": "denied",
+  "requested_state": {
+    "memory": "OFF",
+    "external_brain": "ON",
+    "reasoning_mode": "audit",
+    "question_pack": null,
+    "human_review_required": false
+  },
+  "authorized_state": null,
+  "effective_state": null,
+  "requested_by": {
+    "kind": "agent",
+    "actor_id": "agent-audit-01"
+  },
+  "authorization": null,
+  "activated_by": null,
+  "scope": {
+    "task_id": "task-restricted-audit-01",
+    "session_id": "session-restricted-audit-01",
+    "resource_refs": [
+      "urn:acs:mode-profile:audit:1",
+      "urn:acs:external-brain:reference-corpus:1"
+    ]
+  },
+  "created_at": "2026-01-15T10:00:00Z",
+  "expires_at": "2026-01-15T10:15:00Z",
+  "activated_at": null,
+  "human_review_required": false,
+  "human_review": null,
+  "bindings": {
+    "mode_profile_ref": null,
+    "memory_ref": null,
+    "external_brain_ref": null,
+    "question_pack_ref": null
+  },
+  "trace_id": "trace-denied-001",
+  "receipt_refs": [],
+  "reason": "The task policy does not permit external knowledge access. The request was denied before authorization, and no settings were applied.",
+  "supersedes_ref": "switch-denied-001"
+}
