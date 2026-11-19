@@ -1,0 +1,63 @@
+{
+  "protocol_version": "0.1",
+  "record_id": "switch-unauthorized-003",
+  "switchboard_id": "switchboard-demo-01",
+  "subject_agent": "agent-audit-01",
+  "status": "active",
+  "requested_state": {
+    "memory": "READ_ONLY",
+    "external_brain": "ON",
+    "reasoning_mode": "audit",
+    "question_pack": null,
+    "human_review_required": true
+  },
+  "authorized_state": null,
+  "effective_state": {
+    "memory": "READ_ONLY",
+    "external_brain": "OFF",
+    "reasoning_mode": "audit",
+    "question_pack": null,
+    "human_review_required": true
+  },
+  "requested_by": {
+    "kind": "agent",
+    "actor_id": "agent-audit-01"
+  },
+  "authorization": null,
+  "activated_by": {
+    "kind": "controller",
+    "actor_id": "controller-switchboard-01"
+  },
+  "scope": {
+    "task_id": "task-audit-01",
+    "session_id": "session-audit-01",
+    "resource_refs": [
+      "urn:acs:mode-profile:audit:1",
+      "urn:acs:memory:task-notes:1"
+    ]
+  },
+  "created_at": "2026-01-15T09:00:00Z",
+  "expires_at": "2026-01-15T09:15:00Z",
+  "activated_at": "2026-01-15T09:02:00Z",
+  "human_review_required": true,
+  "human_review": {
+    "review_id": "review-audit-001",
+    "reviewer_id": "human-reviewer-01",
+    "decision": "approved",
+    "reviewed_at": "2026-01-15T09:00:30Z",
+    "valid_until": "2026-01-15T09:20:00Z",
+    "evidence_ref": "urn:acs:review-evidence:audit-001"
+  },
+  "bindings": {
+    "mode_profile_ref": "urn:acs:mode-profile:audit:1",
+    "memory_ref": "urn:acs:memory:task-notes:1",
+    "external_brain_ref": null,
+    "question_pack_ref": null
+  },
+  "trace_id": "trace-unauthorized-001",
+  "receipt_refs": [
+    "urn:acs:receipt:unauthorized-applied-001"
+  ],
+  "reason": "Negative test fixture: the record claims the switch is active even though no authorization was issued.",
+  "supersedes_ref": "switch-unauthorized-002"
+}
